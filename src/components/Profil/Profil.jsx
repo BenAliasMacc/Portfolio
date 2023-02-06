@@ -1,5 +1,6 @@
 import profilPic from '../../assets/profil-pic.png';
 import Contacts from './Contacts';
+import CVLink from './CVLink';
 import SocialNetwork from './SocialNetwork';
 
 const Profil = () => {
@@ -16,6 +17,7 @@ const Profil = () => {
                     </h3>
                     <SocialNetwork />
                     <Contacts />
+                    <CVLink />
                 </div>
             </div>
         </aside>
