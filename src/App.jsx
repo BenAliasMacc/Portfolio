@@ -1,9 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Informations/Home/Home';
 import Informations from './components/Informations/Informations';
-import Resume from './components/Informations/Resume';
-// import Layout from './components/Informations/Layout';
 import Profil from './components/Profil/Profil';
 
 function App() {
