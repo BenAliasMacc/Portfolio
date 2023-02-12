@@ -1,14 +1,22 @@
-import phone from '../../assets/phone.svg';
-import mail from '../../assets/mail.svg';
-import location from '../../assets/location.svg';
-import calendar from '../../assets/calendar.svg';
+import { useState } from 'react';
+import phone from '../../assets/profil/phone.svg';
+import phoneWhite from '../../assets/profil/phoneWhite.svg';
+import location from '../../assets/profil/location.svg';
+import locationWhite from '../../assets/profil/locationWhite.svg';
+import mail from '../../assets/profil/mail.svg';
+import mailWhite from '../../assets/profil/mailWhite.svg';
+import calendar from '../../assets/profil/calendar.svg';
+import calendarWhite from '../../assets/profil/calendarWhite.svg';
 
 const Contacts = () => {
+
+    const [iconHover, setIconHover] = useState(null);
+
     return (
         <div className='p-7 mx-6 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]'>
             <div className="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
-                <div className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
-                    <img src={phone} alt="Téléphone" />
+                <div onMouseOver={() => setIconHover("phone")} onMouseLeave={() => setIconHover(null)} className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
+                    <img src={iconHover === "phone" ? phoneWhite : phone} alt="Téléphone" />
                 </div>
                 <div className="text-left ml-2.5">
                     <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">Téléphone</p>
@@ -18,8 +26,8 @@ const Contacts = () => {
                 </div>
             </div>
             <div className="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
-                <div className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
-                    <img src={location} alt="" />
+                <div onMouseOver={() => setIconHover("location")} onMouseLeave={() => setIconHover(null)} className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
+                    <img src={iconHover === "location" ? locationWhite : location} alt="Localisation" />
                 </div>
                 <div className="text-left ml-2.5">
                     <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">Localisation</p>
@@ -27,8 +35,8 @@ const Contacts = () => {
                 </div>
             </div>
             <div className="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
-                <div className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
-                    <img src={mail} alt="" />
+                <div onMouseOver={() => setIconHover("mail")} onMouseLeave={() => setIconHover(null)} className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
+                    <img src={iconHover === "mail" ? mailWhite : mail} alt="" />
                 </div>
                 <div className="text-left ml-2.5">
                     <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">Email</p>
@@ -38,8 +46,8 @@ const Contacts = () => {
                 </div>
             </div>
             <div className="flex py-2.5">
-                <div className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
-                    <img src={calendar   } alt="" />
+                <div onMouseOver={() => setIconHover("calendar")} onMouseLeave={() => setIconHover(null)} className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
+                    <img src={iconHover === "calendar" ? calendarWhite : calendar} alt="" />
                 </div>
                 <div className="text-left ml-2.5">
                     <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">Date de naissane</p>

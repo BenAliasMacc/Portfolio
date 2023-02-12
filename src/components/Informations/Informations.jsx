@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Header from "./Header";
+import Header from "./Header/Header";
 import InformationsMain from "./InformationsMain";
-import Portfolio from "./Portfolio/Portfolio";
 
 const Informations = () => {
 

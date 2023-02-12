@@ -1,4 +1,4 @@
-import image from '../../../assets/portfolio/fond-texture-mur-peint-blanc.jpg'
+import image from '../../../assets/header-bg.jpg'
 
 const Card = () => {
     return (

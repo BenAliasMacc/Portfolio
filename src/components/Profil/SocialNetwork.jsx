@@ -1,5 +1,5 @@
-import linkedin from '../../assets/linkedin.svg';
-import github from '../../assets/github.svg';
+import linkedin from '../../assets/profil/linkedin.svg';
+import github from '../../assets/profil/github.svg';
 
 const SocialNetwork = () => {
     return (

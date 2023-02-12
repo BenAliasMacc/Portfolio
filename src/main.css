@@ -4,8 +4,13 @@
 
 @layer components {
     .bg-homeTwoBg-dark {
-        background-image: url('./assets/header-bg.png');
+        background-image: url('./assets/header-bg.jpg');
     }
+    @media screen and (min-width: 1280px) {
+        .container {
+            max-width: 1280px;
+        }        
+      }
     .socialButton {
         display: flex;
         justify-content: center;

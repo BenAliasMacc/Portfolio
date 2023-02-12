@@ -21,7 +21,7 @@ const InformationsMain = ({ page }) => {
     };
 
     return (
-        <div className='lg:rounded-2xl bg-white dark:bg-[#111111]'>
+        <div className='lg:rounded-2xl bg-white dark:bg-[#111111] h-[709px]'>
             {displayChoosePage(page)}
         </div>
     );
