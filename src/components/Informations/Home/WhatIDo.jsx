@@ -1,33 +1,37 @@
-import icon1 from '../../../assets/whatIDo/icon-1.svg';
-import icon2 from '../../../assets/whatIDo/icon-2.svg';
-import icon3 from '../../../assets/whatIDo/icon-3.svg';
-import icon4 from '../../../assets/whatIDo/icon-4.svg';
-import icon5 from '../../../assets/whatIDo/icon-5.svg';
-import icon6 from '../../../assets/whatIDo/icon-6.svg';
+import nodejs from '../../../assets/stack/nodejs.svg';
+import javascript from '../../../assets/stack/javascript.svg';
+import reactjs from '../../../assets/stack/reactjs.svg';
+import redux from '../../../assets/stack/redux.svg';
+import bootstrap from '../../../assets/stack/bootstrap.svg';
+import tailwindcss from '../../../assets/stack/tailwindcss.svg';
+import sass from '../../../assets/stack/sass.svg';
 import Card from './Card';
 
 const WhatIDo = () => {
     return (
-        <section className="pb-12 px-2 sm:px-5 md:px-10 lg:px-14">
-            <h3 className="text-[35px] dark:text-white font-medium pb-5">Ma Stack</h3>
+        <section className="pb-12 px-2 sm:px-5 mt-8 md:px-10 lg:px-14">
+            <h3 className="text-[35px] dark:text-white font-medium pb-8">Ma Stack</h3>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
-                <Card icon={icon1} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={javascript} title="Javascript" >
+                    Langage de programmation de scripts côté client utilisé pour dynamiser les sites web.
                 </Card>
-                <Card icon={icon2} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={nodejs} title="Node Js" >
+                    Environnement d'exécution JavaScript côté serveur.
                 </Card>
-                <Card icon={icon3} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={reactjs} title="React Js" >
+                    Bibliothèque JavaScript open-source pour la création d'interfaces utilisateur
                 </Card>
-                <Card icon={icon4} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={redux} title="Redux" >
+                    Bibliothèque open-source JavaScript de gestion d'état pour applications web.
                 </Card>
-                <Card icon={icon5} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={bootstrap} title="Bootstrap" >
+                    Framework CSS open-source qui facilite la création et le design de applications web.
                 </Card>
-                <Card icon={icon6} title="Ui/Ux Design" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat.
+                <Card icon={tailwindcss} title="Tailwind CSS" >
+                    Framework permettant de personnaliser totalement le design d'applications web. 
+                </Card>
+                <Card icon={sass} title="Sass" >
+                    Langage de script préprocesseur qui est compilé ou interprété en CSS. 
                 </Card>
             </div>
         </section> 

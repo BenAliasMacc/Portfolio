@@ -1,11 +1,11 @@
-import phone from '../../../assets/phone.svg';
-import mail from '../../../assets/mail.svg';
+import phone from '../../../assets/contact/phone.svg';
+import mail from '../../../assets/contact/mail.svg';
 import Card from './Card';
 
 const Contact = () => {
     return (
-        <div className="container pb-12 mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
-            <div className="pt-12">
+        <div className="container py-12 mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
+            <div>
                 <h2 className="after-effect after:left-48 mt-12 lg:mt-0 mb-12 md:mb-[30px]">Contact</h2>
                 <div className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mb-[40px] grid gap-x-5 gap-y-7">
                     <Card icon={phone} />

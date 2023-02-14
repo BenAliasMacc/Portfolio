@@ -1,7 +1,7 @@
-import home from '../../../assets/home.svg'
-import resume from '../../../assets/resume.svg'
-import portfolio from '../../../assets/portfolio.svg'
-import contact from '../../../assets/contact.svg'
+import home from '../../../assets/navbar/home.svg'
+import resume from '../../../assets/navbar/resume.svg'
+import portfolio from '../../../assets/navbar/portfolio.svg'
+import contact from '../../../assets/navbar/contact.svg'
 import NavbarElement from './NavbarElement';
 
 const Header = ({ setPage }) => {
