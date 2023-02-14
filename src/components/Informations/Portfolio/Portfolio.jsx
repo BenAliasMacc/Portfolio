@@ -1,6 +1,7 @@
 import atem from '../../../assets/portfolio/atem.jpg';
 import petitsPlats from '../../../assets/portfolio/petitsPlats.jpg';
 import gameOn from '../../../assets/portfolio/gameOn.jpg';
+import netflix from '../../../assets/portfolio/netflix.jpg';
 import image from '../../../assets/portfolio/header-bg.avif'
 import Card from "./Card";
 
@@ -16,7 +17,7 @@ const Portfolio = () => {
                         <Card img={gameOn} />
                     </div>
                     <div className="portfolio-grid_column w-1/2">
-                        <Card img={image} />
+                        <Card img={netflix} />
                         <Card img={image} />
                         <Card img={image} />
                     </div>
