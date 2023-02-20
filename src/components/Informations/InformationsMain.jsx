@@ -21,7 +21,7 @@ const InformationsMain = ({ page }) => {
     };
 
     return (
-        <div className='lg:rounded-2xl bg-white dark:bg-[#111111]'>
+        <div className='lg:rounded-2xl lg:h-screen bg-white dark:bg-[#111111] scrollbar overflow-x-hidden'>
             {displayChoosePage(page)}
         </div>
     );
