@@ -10,8 +10,7 @@
     <title>Vite + React</title>
   </head>
   <body className="dark">
-    <form action="/" hidden method="post" name="contact-form" data-netlify="true" >
-      <input type="hidden" name="form-name" value="contact-form" />
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden >
       <input name="username">
       <input name="email">
       <input name="message">
