@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { dateParser } from "../utils/utils";
 import square from '../assets/square.svg'
 
 const TransitionPage = () => {
@@ -24,7 +23,7 @@ const TransitionPage = () => {
 
     return (
         <div className={`transition-page ${hidden && "transition-hidden"}`}>            
-                <p className="transition-font pl-16 pr-2 text" id='typewriter'>{dateParser(new Date)}: {text}</p>
+                <p className="transition-font pl-16 pr-2 text" id='typewriter'>{text}</p>
                 <p className="transition-font cursor-blink pointer-events-none pt-3"><img src={square} style={{boxShadow: "0px 0px 13px 2px #0F0"}} alt="curseur" /></p>
                 <div className="scanlines"></div>
         </div>

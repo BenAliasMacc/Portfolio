@@ -6,7 +6,7 @@ import SocialNetwork from './SocialNetwork';
 const Profil = ({ page }) => {
 
     return (
-        <aside className={`${page !== 1 && "hidden"} col-span-12 lg:col-span-4 mt-28 lg:mt-44`}>
+        <aside className={`${page !== 1 && "hidden"} lg:block col-span-12 lg:col-span-4 mt-28 lg:mt-44`}>
             <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0 ">
                 <img src={profilPic} alt="photo de profil" className='absolute left-[50%] transform -translate-x-[50%] w-[240px] h-[240px] rounded-[20px] object-cover drop-shadow-xl mt-[-140px]' />
                 <div className="pt-[100px] pb-8 text-center">
