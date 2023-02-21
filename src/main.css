@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
     .bg-homeTwoBg-dark {
         background-image: url('./assets/header-bg.jpg');
     }
@@ -10,6 +14,53 @@
         .container {
             max-width: 1280px;
         }        
+    }
+    .navButton:hover {
+        background-image: linear-gradient(90deg, #FA5252 0%, #DD2476 100%);
+        color: white;
+    }
+    /* .nav {
+        background: linear-gradient(to bottom, rgba(74, 74, 74, 0.6), rgba(0, 0, 0, 0));
+        transition: background-color 0.3s ease-in-out;
+    }
+    .nav--black {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease-in-out;
+    } */
+    .burger-button {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.5s ease-in-out;
+    }
+    .burger-button::before, .burger-button::after {
+        content: "";
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+    }
+    .burger-button::before {
+        transform: translate(-50%, -8px);
+    }
+    .burger-button::after {
+        transform: translate(-50%, +8px);
+    }
+    .show-navbar > ul {
+        visibility: visible;
+    }
+    .show-navbar .burger-button {
+        width: 0;
+        background: transparent;
+    }
+    .show-navbar .burger-button::before {
+        transform: rotate(45deg) translate(-35%, +8px);
+    }
+    .show-navbar .burger-button::after {
+        transform: rotate(-45deg) translate(-35%, -8px);
     }
     .socialButton {
         display: flex;

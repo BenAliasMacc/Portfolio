@@ -4,7 +4,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Resume from './Resume/Resume';
 
 const InformationsMain = ({ page }) => {
-
+    
     const displayChoosePage = (elt) => {
         switch (elt) {
             case 1 :
