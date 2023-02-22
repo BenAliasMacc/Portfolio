@@ -188,7 +188,7 @@
     }
     @media screen and (max-width: 1023px) {
         .transition-font {
-            font-size: 16px;
+            font-size: 20px;
         }
         .scanlines {
             height: 50px;
