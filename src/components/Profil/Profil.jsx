@@ -1,4 +1,4 @@
-import profilPic from '../../assets/profil-pic.png';
+import profilPic from '../../assets/profil-pic.webp';
 import Contacts from './Contacts';
 import CVLink from './CVLink';
 import SocialNetwork from './SocialNetwork';

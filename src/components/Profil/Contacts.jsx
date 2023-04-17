@@ -13,7 +13,7 @@ const Contacts = () => {
     const [iconHover, setIconHover] = useState(null);
 
     return (
-        <div className='p-7 mx-6 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]'>
+        <div className='p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]'>
             <div className="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]">
                 <div onMouseOver={() => setIconHover("phone")} onMouseLeave={() => setIconHover(null)} className="socialButton bg-white dark:bg-black text-[#E93B81] shadow-md">
                     <img src={iconHover === "phone" ? phoneWhite : phone} alt="Téléphone" />

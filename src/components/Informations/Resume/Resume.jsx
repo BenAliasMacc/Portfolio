@@ -3,8 +3,10 @@ import experience from '../../../assets/resume/experience.svg';
 import medal from '../../../assets/resume/medal.svg';
 import diplome from '../../../assets/resume/diplome.pdf';
 import Header from './Header';
-import Card from './Card';
+import Card from './CardTraining';
 import Skills from './Skills';
+import Training from './Training';
+import Experience from './Experience';
 
 const Resume = () => {
     
@@ -14,24 +16,8 @@ const Resume = () => {
                 <div className='pt-12'>
                     <h2 className='after-effect after:left-32'>CV</h2>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-8 text-white'>
-                        <div>
-                            <Header icon={education} altText="education" title="Formation" />
-                            <div>
-                                <Card year='2021-2022' formation="Développeur d'application Front-end" place="OpenClassroom - Formation à distance" >
-                                    <a href={diplome} target="_blank"><img src={medal} alt="Lien diplôme" /></a>
-                                </Card>
-                                <Card year='2009-2011' formation="DEESMA" place="Ecole internationale Tunon - Paris" />
-                                <Card year='2021-2023' formation="Bachelor en commerce international" place="Coventry University" />                        
-                            </div>
-                        </div>
-                        <div>
-                            <Header icon={experience} altText="expérience" title="Expérience" />
-                            <div>
-                                <Card year='2023' formation="Réseau social" place="Projet personnel" />                
-                                <Card year='2022' formation="Call Direct" place="Projet freelance" />                
-                                <Card year='2022' formation="Atem Rénovation" place="Projet freelance" />                
-                            </div>
-                        </div>
+                        <Training />
+                        <Experience />
                     </div>
                 </div>
             </div>
@@ -40,13 +26,9 @@ const Resume = () => {
                     <h4 className='text-2xl dark:text-white font-medium mb-8'>Compétences</h4>
                     <div className='flex gap-x-3 gap-y-3 md:gap-y-3 md:gap-x-3 flex-wrap'>
                         <Skills skill="Integration de maquette" />
-                        <Skills skill="Création de sit web dynamique avec React Js" />
-                        <Skills skill="Gestion et création de base de données" />
-                        <Skills skill="Typescript" />
-                        <Skills skill="MongoDB" />
-                        <Skills skill="Express" />
-                        <Skills skill="Tailwind CSS" />
-                        <Skills skill="Bootstrap" />
+                        <Skills skill="Création de site web dynamique en vanilla et React Js" />
+                        <Skills skill="Maîtrise des opérations CRUD côté Front" />
+                        <Skills skill="Gestion et création de base de données avec la stack MERN" />
                     </div>
                 </div>
             </div>

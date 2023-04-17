@@ -10,7 +10,7 @@ import Card from './Card';
 const WhatIDo = () => {
     return (
         <section className="pb-12 px-2 sm:px-5 mt-8 md:px-10 lg:px-14">
-            <h3 className="text-[35px] dark:text-white font-medium pb-8">Ma Stack</h3>
+            <h3 className="text-[35px] dark:text-white font-medium pb-8">Stack utilisé</h3>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 ">
                 <Card icon={javascript} title="Javascript" >
                     Langage de programmation de scripts côté client utilisé pour dynamiser les sites web.

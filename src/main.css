@@ -82,7 +82,14 @@
         color: rgb(255 255 255/var(--tw-text-opacity));
     }
     .scrollbar::-webkit-scrollbar {
+        width: 5px;
+    }
+    .scrollbar::-webkit-scrollbar-track {
         display: none;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: rgb(92, 92, 92);
+        border-radius: 10px;
     }
     .overlay {
         position: absolute;
